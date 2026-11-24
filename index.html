@@ -6,36 +6,51 @@
 <title>Ahmed Abdelrhman | Data Analyst</title>
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
-body { background: #0f172a; color: white; min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 20px; }
-.card { max-width: 650px; width: 100%; background: #1e293b; border-radius: 20px; padding: 40px 30px; text-align: center; box-shadow: 0 20px 50px rgba(0,0,0,0.4); }
-.avatar { width: 110px; height: 110px; background: #0ea5e9; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 48px; font-weight: bold; margin: 0 auto 20px; }
-h1 { font-size: 32px; margin-bottom: 5px; }
-.role { color: #38bdf8; font-size: 18px; font-weight: 600; margin-bottom: 15px; }
-.bio { color: #cbd5e1; line-height: 1.7; margin-bottom: 25px; font-size: 16px; }
-.skills { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-bottom: 30px; }
-.skills span { background: #0f172a; border: 1px solid #334155; padding: 8px 14px; border-radius: 20px; font-size: 14px; }
-.buttons { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
-.btn { padding: 13px 24px; border-radius: 12px; text-decoration: none; font-weight: 700; font-size: 16px; }
-.btn-linkedin { background: #0A66C2; color: white; }
-.btn-github { background: white; color: #0f172a; }
-.btn-cv { background: transparent; color: white; border: 1px solid #475569; }
-.location { margin-top: 20px; color: #94a3b8; font-size: 14px; }
+body { background: #0A1931; color: white; padding: 20px; }
+.container { max-width: 800px; margin: 0 auto; }
+.header { text-align: center; padding: 40px 20px 20px; }
+.profile-img { width: 160px; height: 160px; object-fit: cover; object-position: top; border-radius: 50%; border: 5px solid #FFC947; margin: 0 auto 20px; display: block; }
+h1 { font-size: 36px; }
+h1 span { color: #FFC947; }
+.role { color: #FFC947; font-size: 19px; font-weight: 700; margin: 10px 0 15px; }
+.bio { color: #D1D5DB; line-height: 1.7; max-width: 600px; margin: 0 auto; }
+.buttons { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin: 25px 0; }
+.btn { padding: 13px 26px; border-radius: 12px; text-decoration: none; font-weight: 800; }
+.btn-yellow { background: #FFC947; color: #0A1931; }
+.btn-white { background: white; color: #0A1931; }
+.section-title { font-size: 26px; margin: 40px 0 20px; text-align: center; }
+.section-title span { color: #FFC947; }
+.skills { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+.skills span { background: #FFC947; color: #0A1931; padding: 9px 16px; border-radius: 20px; font-weight: 700; font-size: 14px; }
+.projects { display: grid; gap: 16px; }
+.project { background: white; color: #0A1931; border-radius: 16px; padding: 22px; border-left: 6px solid #FFC947; }
+.project h3 { font-size: 20px; margin-bottom: 8px; }
+.project p { color: #4B5563; line-height: 1.6; margin-bottom: 12px; }
+.tag { background: #0A1931; color: #FFC947; padding: 5px 10px; border-radius: 10px; font-size: 12px; font-weight: 700; margin-right: 6px; }
+.footer { text-align: center; color: #9CA3AF; padding: 30px 0; font-size: 14px; }
 </style>
 </head>
 <body>
-<div class="card">
-<div class="avatar">A</div>
-<h1>Ahmed Abdelrhman</h1>
+<div class="container">
+<div class="header">
+<img class="profile-img" src="profile.jpg" alt="Ahmed Abdelrhman">
+<h1>Ahmed <span>Abdelrhman</span></h1>
 <div class="role">Data Analyst | Power BI | Python | Excel</div>
-<p class="bio">Data Analyst based in Cairo, Egypt. I turn raw data into clear insights and dashboards that help businesses make better decisions. Focused on Power BI, SQL, Python and Excel.</p>
-<div class="skills">
-<span>Power BI</span><span>Python</span><span>SQL</span><span>Excel</span><span>Data Analysis</span><span>Dashboards</span>
-</div>
+<p class="bio">Data Analyst from Cairo, Egypt. I turn raw data into clear dashboards and insights that help businesses make better decisions.</p>
 <div class="buttons">
-<a class="btn btn-linkedin" href="https://www.linkedin.com/in/ahmed-abdelrhman-45a08739b" target="_blank">LinkedIn</a>
-<a class="btn btn-github" href="https://github.com/AhmeedAbdelrhman" target="_blank">GitHub</a>
+<a class="btn btn-yellow" href="https://www.linkedin.com/in/ahmed-abdelrhman-45a08739b" target="_blank">LinkedIn</a>
+<a class="btn btn-white" href="https://github.com/AhmeedAbdelrhman" target="_blank">GitHub</a>
 </div>
-<p class="location">📍 Cairo, Egypt • Open to Work</p>
+</div>
+<h2 class="section-title">My <span>Skills</span></h2>
+<div class="skills"><span>Power BI</span><span>Python</span><span>SQL</span><span>Excel</span><span>Data Analysis</span><span>Dashboards</span></div>
+<h2 class="section-title">My <span>Projects</span></h2>
+<div class="projects">
+<div class="project"><h3>📊 Sales Dashboard - Power BI</h3><p>Interactive dashboard to track sales, profit and top products.</p><span class="tag">Power BI</span><span class="tag">DAX</span></div>
+<div class="project"><h3>🐍 Python Data Analysis</h3><p>Analyzed real dataset with Python, cleaned data and visualized insights.</p><span class="tag">Python</span><span class="tag">Pandas</span></div>
+<div class="project"><h3>📈 Excel Sales Report</h3><p>Full sales report in Excel with Pivot Tables and charts.</p><span class="tag">Excel</span><span class="tag">Pivot Table</span></div>
+</div>
+<p class="footer">📍 Cairo, Egypt • Open to Work • Ahmed Abdelrhman</p>
 </div>
 </body>
 </html>
